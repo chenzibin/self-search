@@ -15,6 +15,9 @@ allprojects {
     dependencies {
         testCompile 'junit:junit:4.11'
         providedCompile 'org.projectlombok:lombok:1.18.10'
+        compile group: 'org.apache.lucene', name: 'lucene-core', version: '8.4.0'
+        compile group: 'org.apache.lucene', name: 'lucene-analyzers-common', version: '8.4.0'
+        compile group: 'org.apache.lucene', name: 'lucene-queryparser', version: '8.4.0'
     }
 
     tasks.withType(JavaCompile) {
